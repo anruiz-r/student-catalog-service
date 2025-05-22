@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package com.example.demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,8 +8,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentGrade {
-    private String name;
-    private int age;
+
+public class CourseGradeDTO {
+    private Long courseCode;
+    private Long studentId;
+    private String studentName;
     private int grade;
+
 }

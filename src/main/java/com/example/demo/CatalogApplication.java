@@ -10,12 +10,10 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class CatalogApplication {
 	@Bean
-	@LoadBalanced
 	public RestTemplate getRestTemplate(){
 		return new RestTemplate();
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(CatalogApplication.class, args);
 	}
-
 }
